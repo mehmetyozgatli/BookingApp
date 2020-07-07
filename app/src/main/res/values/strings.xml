@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Booking App</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t Have an Account? Sign Up</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_an_account_sign_in">Already Have an Account? Sign in</string>
+    <string name="fullName">Full Name</string>
+    <string name="Phone">Phone Number</string>
+    <string name="logout">Logout</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="booking_app">Booking App</string>
+    <string name="www_bookingapp_com">www.bookingapp.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="update">Update User Info</string>
+    <string name="user_information">User Information</string>
+    <string name="add_home">Add Home</string>
+    <string name="home">Home</string>
+    <string name="profile_details">Profile Details</string>
+    <string name="profile">Profile</string>
+    <string name="house_title">House Title</string>
+    <string name="salary">Salary</string>
+    <string name="address">Address</string>
+    <string name="heating_system">Heating System</string>
+    <string name="save_house">UPSERT</string>
+    <string name="add_image">Add Image</string>
+    <string name="delete_house">DELETE</string>
+
+
+    <string-array name="house_type">
+        <item>Room</item>
+        <item>Build</item>
+    </string-array>
+
+    <string-array name="house_room_number">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="city">
+        <item>Istanbul</item>
+        <item>Mersin</item>
+    </string-array>
+
+    <string-array name="town">
+        <item>Ataşehir</item>
+        <item>Kadıköy</item>
+        <item>Yenişehir</item>
+        <item>Mezitli</item>
+    </string-array>
+</resources>

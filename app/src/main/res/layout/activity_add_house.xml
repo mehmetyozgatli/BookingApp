@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:background="@drawable/blue_background"
+    tools:context=".AddHouseActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/house_imageView"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:onClick="selectImage"
+                app:srcCompat="@drawable/photo" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/input_houseTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/login_edit_background"
+                android:inputType="text"
+                android:hint="@string/house_title"
+                android:padding="10dp"
+                tools:ignore="TextViewEdits">
+
+            </EditText>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/houseTypeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="House Type:"
+                    android:textColor="#000" />
+
+                <Spinner
+                    android:id="@+id/spinner_houseType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/houseTypeText"
+                    android:outlineAmbientShadowColor="#000"
+                    android:outlineSpotShadowColor="#000"
+                    android:textColor="#000">
+
+                </Spinner>
+
+                <TextView
+                    android:id="@+id/houseRoomCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/houseTypeText"
+                    android:layout_marginTop="10dp"
+                    android:text="Number of Room:"
+                    android:textColor="#000" />
+
+                <Spinner
+                    android:id="@+id/spinner_houseRoomCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinner_houseType"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/houseRoomCount"
+                    android:outlineAmbientShadowColor="#000"
+                    android:outlineSpotShadowColor="#000">
+
+                </Spinner>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/input_houseAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/login_edit_background"
+                android:hint="@string/address"
+                android:padding="10dp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/input_houseSalary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/login_edit_background"
+                android:hint="@string/salary"
+                android:padding="10dp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/input_houseHeatingSystem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/login_edit_background"
+                android:hint="@string/heating_system"
+                android:padding="10dp">
+
+            </EditText>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/houseCityText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City:"
+                    android:textColor="#000" />
+
+                <Spinner
+                    android:id="@+id/spinner_houseCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/houseCityText"
+                    android:outlineAmbientShadowColor="#000"
+                    android:outlineSpotShadowColor="#000"
+                    android:textColor="#000">
+
+                </Spinner>
+
+                <TextView
+                    android:id="@+id/houseTownText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/houseCityText"
+                    android:layout_marginTop="10dp"
+                    android:text="Town:"
+                    android:textColor="#000" />
+
+                <Spinner
+                    android:id="@+id/spinner_houseTown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinner_houseCity"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/houseTownText"
+                    android:outlineAmbientShadowColor="#000"
+                    android:outlineSpotShadowColor="#000">
+
+                </Spinner>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/updateHouse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:text="@string/save_house"
+                android:textSize="18sp"
+                android:onClick="saveHouse"/>
+
+            <Button
+                android:id="@+id/deleteHouse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:text="@string/delete_house"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:onClick="deleteHouse"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
